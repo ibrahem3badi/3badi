@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدماتنا - السياحة في الأردن</title>
+    <link rel="stylesheet" href="css-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	 <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\ibrah\Desktop\design\السياحة.jpg" alt="شعار السياحة الأردنية">
+                <h1>السياحة في الأردن</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="destinations.html">الوجهات</a></li>
+                    <li><a href="services.html" class="active">خدماتنا</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="services-intro">
+        <div class="container">
+            <h2>خدماتنا السياحية</h2>
+            <p>نقدم مجموعة متكاملة من الخدمات لضمان رحلة ممتعة ومريحة في ربوع الأردن</p>
+        </div>
+    </section>
+
+    <section class="our-services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>حجوزات الفنادق</h3>
+                    <p>نساعدك في العثور على أفضل خيارات الإقامة التي تناسب ميزانيتك وتوقعاتك</p>
+                    <a href="#" class="btn" id="hotel-booking-btn">احجز الآن</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>تأجير السيارات</h3>
+                    <p>وفر الوقت واحصل على أفضل عروض تأجير السيارات مع سائق أو بدون سائق</p>
+                    <a href="#" class="btn" id="car-rental-btn">احجز الآن</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>جولات سياحية</h3>
+                    <p>جولات منظمة مع مرشدين سياحيين محترفين يتحدثون عدة لغات</p>
+                    <a href="#" class="btn" id="tours-btn">احجز الآن</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>تجارب طعام</h3>
+                    <p>استمتع بأشهى المأكولات الأردنية في أفضل المطاعم أو مع عائلات محلية</p>
+                    <a href="#" class="btn" id="food-experience-btn">احجز الآن</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <h3>تخييم صحراوي</h3>
+                    <p>تجربة فريدة للتخييم في وادي رم تحت النجوم مع عشاء بدوي تقليدي</p>
+                    <a href="#" class="btn" id="camping-btn">احجز الآن</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>باقات سياحية</h3>
+                    <p>باقات متكاملة تشمل الإقامة والجولات والمواصلات بأسعار تنافسية</p>
+                    <a href="#" class="btn" id="packages-btn">احجز الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-form-section" id="booking-form">
+        <div class="container">
+            <h2>نموذج الحجز</h2>
+            <form id="service-booking-form">
+                <div class="form-group">
+                    <label for="service-type">نوع الخدمة:</label>
+                    <select id="service-type" name="service-type" required>
+                        <option value="">اختر الخدمة</option>
+                        <option value="hotel">حجز فندق</option>
+                        <option value="car">تأجير سيارة</option>
+                        <option value="tour">جولة سياحية</option>
+                        <option value="food">تجربة طعام</option>
+                        <option value="camping">تخييم صحراوي</option>
+                        <option value="package">باقة سياحية</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">الاسم الكامل:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">تاريخ الحجز:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">تفاصيل إضافية:</label>
+                    <textarea id="details" name="details" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn">إرسال الطلب</button>
+            </form>
+        </div>
+    </section>
+
+  <section class="testimonials" dir="rtl">
+    <div class="container">
+        <h2>آراء عملائنا</h2>
+        <div class="testimonials-slider">
+            <div class="testimonial active">
+                <p>تجربة رائعة مع فريق السياحة في الأردن، ساعدوني في تخطيط رحلتي بالكامل وكان كل شيء على أعلى مستوى من التنظيم والاحترافية.</p>
+                <div class="client-info">
+                    <img src="images/client1.jpg" alt="صورة محمد أحمد">
+                    <h4>محمد أحمد</h4>
+                    <span>من السعودية</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>الجولة التي نظمتها لنا الشركة إلى البتراء ووادي رم كانت من أفضل التجارب في حياتي، المرشد السياحي كان على درجة عالية من المعرفة.</p>
+                <div class="client-info">
+                    <img src="images/client2.jpg" alt="صورة سارة خالد">
+                    <h4>سارة خالد</h4>
+                    <span>من الإمارات</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <p>الفندق الذي أوصت به الشركة كان رائعاً والموقع ممتاز، كما أن سائق السيارة الذي استأجرناه كان مهذباً ومحترفاً.</p>
+                <div class="client-info">
+                    <img src="images/client3.jpg" alt="صورة علي محمود">
+                    <h4>علي محمود</h4>
+                    <span>من الكويت</span>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-nav">
+            <button class="prev-testimonial" aria-label="السابق"><i class="fas fa-chevron-right"></i></button>
+            <button class="next-testimonial" aria-label="التالي"><i class="fas fa-chevron-left"></i></button>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>عن الموقع</h3>
+                    <p>نقدم معلومات شاملة عن السياحة في الأردن لمساعدة الزوار على التخطيط لرحلاتهم.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="destinations.html">الوجهات</a></li>
+                        <li><a href="services.html">خدماتنا</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h3>تواصل معنا</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> عمان، الأردن</p>
+                    <p><i class="fas fa-phone"></i> +962 6 123 4567</p>
+                    <p><i class="fas fa-envelope"></i> info@jordan-tourism.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 السياحة في الأردن. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

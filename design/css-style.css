@@ -1,0 +1,1047 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* General Styles */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.logo h1 {
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #007bff;
+    background-color: #f0f8ff;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.hero {
+    background:url('https://touristjourney.com/wp-content/uploads/2020/07/Where-to-Stay-in-Amman0-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.hero-content {
+    width: 100%;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 200px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 200px;
+}
+
+/* Featured Destinations */
+.featured-destinations {
+    padding: 60px 0;
+}
+
+.featured-destinations h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #007bff;
+    font-size: 2rem;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.destination-card h3 {
+    padding: 15px 15px 0;
+    color: #007bff;
+}
+
+.destination-card p {
+    padding: 0 15px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.destination-card .btn {
+    margin: 15px;
+    display: inline-block;
+}
+.destination-item img {
+  width: 5px;
+  height: auto;
+}
+
+/* Why Jordan Section */
+.why-jordan {
+    background-color: #f0f8ff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.why-jordan h2 {
+    color: #007bff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.reason {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.reason i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.reason h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.reason p {
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 60px 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-section p {
+    margin-bottom: 15px;
+    color: #bbb;
+}
+
+.footer-section.about .social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-section.links ul {
+    list-style: none;
+}
+
+.footer-section.links li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section.links a:hover {
+    color: #007bff;
+}
+
+.footer-section.contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-section.contact i {
+    margin-left: 10px;
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #444;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+/* About Page Styles */
+.about-us {
+    padding: 100px 0 60px;
+}
+
+.about-us h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h3 {
+    color: #007bff;
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+}
+
+.about-text ul {
+    margin: 15px 0 15px 20px;
+}
+
+.about-text ul li {
+    margin-bottom: 8px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.our-team {
+    padding: 60px 0;
+    background-color: #f0f8ff;
+}
+
+.our-team h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.member {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #f0f8ff;
+}
+
+.member h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member p {
+    color: #666;
+}
+
+/* Destinations Page Styles */
+.destinations-intro {
+    padding: 100px 0 40px;
+    text-align: center;
+}
+
+.destinations-intro h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.destinations-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.all-destinations {
+    padding: 60px 0;
+}
+
+.destination-filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    background-color: #f0f8ff;
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.destinations-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.destination-item {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.destination-item img {
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.destination-info h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.destination-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.destination-info ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.destination-info ul li {
+    margin-bottom: 8px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.destination-info ul li i {
+    margin-left: 8px;
+    color: #007bff;
+}
+
+.map-section {
+    padding: 60px 0;
+    background-color: #f0f8ff;
+}
+
+.map-section h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.map-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.map-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.color-box.historical {
+    background-color: #ff7b00;
+}
+
+.color-box.natural {
+    background-color: #28a745;
+}
+
+.color-box.religious {
+    background-color: #6f42c1;
+}
+
+/* Services Page Styles */
+.services-intro {
+    padding: 100px 0 40px;
+    text-align: center;
+}
+
+.services-intro h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.services-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.our-services {
+    padding: 60px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f8ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.service-card h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.booking-form-section {
+    padding: 60px 0;
+    background-color: #f0f8ff;
+}
+
+.booking-form-section h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+#service-booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.testimonials {
+    padding: 60px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.testimonials-slider {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+
+.client-info h4 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.client-info span {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.testimonial-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.testimonial-nav button {
+    background: #007bff;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.testimonial-nav button:hover {
+    background: #0056b3;
+}
+
+/* Contact Page Styles */
+.contact-intro {
+    padding: 100px 0 40px;
+    text-align: center;
+}
+
+.contact-intro h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.contact-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.contact-content {
+    padding: 60px 0;
+}
+
+.contact-info {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-info h3 {
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-left: 15px;
+}
+
+.info-item h4 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    color: #666;
+}
+
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media h4 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    color: #007bff;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#contactForm {
+    display: grid;
+    gap: 20px;
+}
+
+.faq-section {
+    padding: 60px 0;
+    background-color: #f0f8ff;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f8f9fa;
+}
+
+.faq-question h3 {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.faq-question i {
+    color: #007bff;
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.faq-answer p {
+    color: #666;
+    padding-bottom: 20px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding: 0 20px 20px;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+.map-section {
+    padding: 60px 0;
+}
+
+.map-section h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.map-container {
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .destination-item {
+        flex-direction: column;
+    }
+    
+    .destination-item img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    nav {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        background: white;
+        width: 80%;
+        height: calc(100vh - 80px);
+        transition: all 0.3s;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    nav.active {
+        right: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    nav ul li {
+        margin: 15px 0;
+    }
+    
+    .hero {
+        height: 60vh;
+        margin-top: 70px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .destinations-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+    
+    .hero {
+        height: 50vh;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
